@@ -70,43 +70,43 @@ void setNumberOnClock(int num){
 	}
 	if(num==2){
 		clearAllClock();
-		HAL_GPIO_WritePin(h12_GPIO_Port, h2_Pin, RESET);
+		HAL_GPIO_WritePin(h2_GPIO_Port, h2_Pin, RESET);
 	}
 	if(num==3){
 		clearAllClock();
-		HAL_GPIO_WritePin(h2_GPIO_Port, h3_Pin, RESET);
+		HAL_GPIO_WritePin(h3_GPIO_Port, h3_Pin, RESET);
 	}
 	if(num==4){
 		clearAllClock();
-		HAL_GPIO_WritePin(h3_GPIO_Port, h4_Pin, RESET);
+		HAL_GPIO_WritePin(h4_GPIO_Port, h4_Pin, RESET);
 	}
 	if(num==5){
 		clearAllClock();
-		HAL_GPIO_WritePin(h4_GPIO_Port, h5_Pin, RESET);
+		HAL_GPIO_WritePin(h5_GPIO_Port, h5_Pin, RESET);
 	}
 	if(num==6){
 		clearAllClock();
-		HAL_GPIO_WritePin(h5_GPIO_Port, h6_Pin, RESET);
+		HAL_GPIO_WritePin(h6_GPIO_Port, h6_Pin, RESET);
 	}
 	if(num==7){
 		clearAllClock();
-		HAL_GPIO_WritePin(h6_GPIO_Port, h7_Pin, RESET);
+		HAL_GPIO_WritePin(h7_GPIO_Port, h7_Pin, RESET);
 	}
 	if(num==8){
 		clearAllClock();
-		HAL_GPIO_WritePin(h7_GPIO_Port, h8_Pin, RESET);
+		HAL_GPIO_WritePin(h8_GPIO_Port, h8_Pin, RESET);
 	}
 	if(num==9){
 		clearAllClock();
-		HAL_GPIO_WritePin(h8_GPIO_Port, h9_Pin, RESET);
+		HAL_GPIO_WritePin(h9_GPIO_Port, h9_Pin, RESET);
 	}
 	if(num==10){
 		clearAllClock();
-		HAL_GPIO_WritePin(h9_GPIO_Port, h10_Pin, RESET);
+		HAL_GPIO_WritePin(h10_GPIO_Port, h10_Pin, RESET);
 	}
 	if(num==11){
 		clearAllClock();
-		HAL_GPIO_WritePin(h10_GPIO_Port, h11_Pin, RESET);
+		HAL_GPIO_WritePin(h11_GPIO_Port, h11_Pin, RESET);
 	}
 }
 /* USER CODE END 0 */

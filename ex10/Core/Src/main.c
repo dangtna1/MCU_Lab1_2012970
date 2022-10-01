@@ -123,28 +123,8 @@ void ClearNumberOnClock(int num){
 }
 
 int hour = 12;
-int minute = 30; //so it's easy to observe
+int minute = 9; //so it's easy to observe
 int second = 0;
-
-void settime(int hour, int minute, int sec){
-	  second++;
-	  if(second >= 60) {
-		  second = 0;
-		  minute++;
-	  }
-	  if(minute >= 60) {
-		  minute = 0;
-		  hour++;
-	  }
-	  if(hour >= 12) {
-		  hour = 0;
-	  }
-	clearAllClock();
-	setNumberOnClock(hour);
-	setNumberOnClock(minute/5);
-	setNumberOnClock(sec/5);
-}
-
 int main(void)
 {
   /* USER CODE BEGIN 1 */
@@ -178,7 +158,22 @@ int main(void)
 
   while (1)
   {
-	  settime(hour, minute, second);
+	  second++;
+	  if (second == 60) {
+		  second = 0;
+		  minute++;
+	  }
+	  if (minute == 60) {
+		  minute = 0;
+		  hour++;
+	  }
+	  if (hour == 12) {
+		  hour = 0;
+	  }
+	  clearAllClock();
+	  setNumberOnClock(second/5);
+	  setNumberOnClock(minute/5);
+	  setNumberOnClock(hour);
 	  HAL_Delay(1000);
   }
   /* USER CODE END 3 */

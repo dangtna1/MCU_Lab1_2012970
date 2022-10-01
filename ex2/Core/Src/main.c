@@ -92,29 +92,26 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   int state = 1;
-  HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, SET);
-  HAL_GPIO_WritePin(LED_YELLOW_GPIO_Port, LED_YELLOW_Pin, SET);
-  HAL_GPIO_WritePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin, SET);
   while (1)
   {
+	    HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, SET);
+	    HAL_GPIO_WritePin(LED_YELLOW_GPIO_Port, LED_YELLOW_Pin, SET);
+	    HAL_GPIO_WritePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin, SET);
 	  	  switch(state) {
 	  		  case 1:
 	  			  HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, RESET);
 	  			  HAL_Delay(5000);
 	  			  state = 2;
-	  			  HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, SET);
 	  			  break;
 	  		  case 2:
 	  			  HAL_GPIO_WritePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin, RESET);
 	  			  HAL_Delay(3000);
 	  			  state = 3;
-	  			  HAL_GPIO_WritePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin, SET);
 	  			  break;
 	  		  case 3:
 	  			  HAL_GPIO_WritePin(LED_YELLOW_GPIO_Port, LED_YELLOW_Pin, RESET);
 	  			  HAL_Delay(2000);
 	  			  state = 1;
-	  			  HAL_GPIO_WritePin(LED_YELLOW_GPIO_Port, LED_YELLOW_Pin, SET);
 	  			  break;
 	  	  }
 
