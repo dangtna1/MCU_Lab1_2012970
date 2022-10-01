@@ -2374,3 +2374,7 @@
 2022-10-01 10:21:38,735 [INFO] ApiDb:280 - User favorites Boards=[]
 2022-10-01 10:21:38,737 [INFO] ApiDb:276 - Save user favorites file C:\Users\tamqu/.stm32cubeide/favorites.examples.txt: 0 item(s)
 2022-10-01 10:21:38,737 [INFO] ApiDb:280 - User favorites Examples=[]
+2022-10-01 10:22:43,473 [INFO] Activator:177 - 
+
+
+2022-10-01 10:22:43,474 [INFO] Activator:178 - !SESSION log4j initialized
